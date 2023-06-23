@@ -1,0 +1,126 @@
+body{
+    box-sizing: border-box;
+    width:100%;
+    height:100vh;
+    background-image: url("../Assets/Background.png");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.card{
+    width: 30%;
+    /* max-width: 400px; */
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card-heading{
+    background-color: #2b28d9;
+    background-image: url("../Assets/Pattern.png");
+    background-size: cover;
+    background-position: center;
+    padding:40px;
+    color:#ffff;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.card-body{
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card-body form{
+width: 100%;
+display: flex;
+justify-content: space-between;
+gap:10px
+
+}
+input{
+    width: 68%;
+    padding:12px 15px;
+    border: 1px solid rgb(227, 224, 224);
+    outline: none;
+    background-color: #ededed;
+    border-radius: 4px;
+    
+}
+.button{
+    width: 29%;
+    background-color: #2b28d9;
+    border: none;
+   
+    color:#fff;
+}
+.card-body p{
+    color:#747373;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 00;
+}
+.card-body :nth-child(3){
+    color:rgb(166, 171, 171);
+    margin: 10px 0px;
+    align-self: flex-start;
+
+}
+.card-body p:nth-child(){
+    align-self: center;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    /* border: 1px solid red; */
+}
+.user img{
+    height: 100%;
+
+}
+.user-details{
+    /* padding: 10px 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 1px solid red; */
+    padding-top: 20px;
+}
+@media (max-width:1200px) {
+    .card{
+        width: 48%;
+    }
+}
+
+@media (max-width:850px) {
+    .card{
+        width: 66%;
+    }
+}
+
+@media (max-width:550px) {
+    .card{
+        width: 80%;
+    }
+}
+@media (max-width:450px) {
+    .card{
+        width: 100%;
+    }
+}
